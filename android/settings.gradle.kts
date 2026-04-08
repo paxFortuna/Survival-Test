@@ -17,9 +17,10 @@ pluginManagement {
 }
 
 plugins {
-    id("com.android.application") version "8.9.1" apply false // 8.7.3에서 8.9.1로 수정
+    id("com.android.application") version "8.9.1" apply false
     id("com.android.library") version "8.9.1" apply false
-    id("org.jetbrains.kotlin.android") version "1.9.24" apply false // 코틀린 버전도 확인 필요할 수 있음
+    // 이 부분을 2.1.0으로 수정하세요
+    id("org.jetbrains.kotlin.android") version "2.1.0" apply false 
 }
 
 include(":app")
