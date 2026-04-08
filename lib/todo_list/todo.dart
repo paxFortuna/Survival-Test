@@ -1,17 +1,17 @@
-// import 'package:hive_flutter/adapters.dart';
+import 'package:hive_flutter/adapters.dart';
 
-// part 'todo.g.dart';
+part 'todo.g.dart';
 
-// @HiveType(typeId: 0)
-// class Todo extends HiveObject {
-//   @HiveField(0)
-//   int? id;
-//   @HiveField(1)
-//   final String title;
-//   @HiveField(2)
-//   final int dateTime;
-//   @HiveField(3)
-//   bool isDone;
+@HiveType(typeId: 0)
+class Todo extends HiveObject {
+  @HiveField(0)
+  int? id;
+  @HiveField(1)
+  final String title;
+  @HiveField(2)
+  final int dateTime;
+  @HiveField(3)
+  bool isDone;
 
-//   Todo({required this.title, required this.dateTime, this.isDone = false});
-// }
+  Todo({required this.title, required this.dateTime, this.isDone = false});
+}
